@@ -6,16 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8IQ</title>
     <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
       body {
-        background-color: #f3f3f4;
-        color: rgb(103, 106, 108);
+          background-color: #f3f3f4;
+          color: rgb(103, 106, 108);
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;          
+      }
+      strong {
+          font-weight: 700;
+      }
+      .title {
+          text-align: center;
+          animation-name: fadeInDown;
+          animation-duration: 1s;
+          animation-fill-mode: both;
       }
       .title h1 {
-        font-size: 170px;
+          font-size: 170px;
+          margin: 20px 0 10px;
+          font-weight: 300;
       }
       .title h2 {
-        font-size: 26px;
-        font-weight: bold;
+          font-size: 26px;
+          font-weight: bold;
+          margin: 5px 0 10px;
+          font-weight: 600;
+      }
+      @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
       }
     </style>
 </head>
@@ -23,5 +49,6 @@
     <div class="title">
         <h1>8IQ</h1>
         <h2>Software company</h2>
+        <p>Our primary focus on <strong>simplicity</strong> and development <strong>speed</strong></p>
     </div>
 </body>
