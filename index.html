@@ -3,14 +3,18 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
     <title>8IQ</title>
     <style>
-      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
       body {
           background-color: #fff;
           color: #333;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 400;          
+          font-family: "Nunito", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
       }
       strong {
           font-weight: 700;
@@ -23,16 +27,26 @@
           animation-duration: 1s;
           animation-fill-mode: both;
       }
-      .title h1 {
+      h1 {
           font-size: 170px;
           margin: 20px 0 10px;
           font-weight: 300;
       }
-      .title h2 {
+      h2 {
           font-size: 26px;
           font-weight: bold;
           margin: 5px 0 10px;
           font-weight: 600;
+      }
+      .logo {
+          display: flex;
+          align-content: center;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          align-items: center;
+      }
+      .logo h1 {
+          margin: 0;
       }
       @keyframes fadeInDown {
         0% {
@@ -48,8 +62,10 @@
 </head>
 <body>
     <div class="title">
-        <dotlottie-player src="https://assets-v2.lottiefiles.com/a/20762556-116f-11ee-b7fe-07eb38231417/SiBOFscAv9.lottie" background="transparent" speed="1" style="width: 200px; height: 200px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
-        <h1>8IQ</h1>
+        <div class="logo">
+            <dotlottie-player src="https://assets-v2.lottiefiles.com/a/20762556-116f-11ee-b7fe-07eb38231417/SiBOFscAv9.lottie" background="transparent" speed="1" style="width: 396px; height: 216px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+            <h1>8IQ</h1>
+        </div>
         <h2>Software community</h2>
         <p>Our primary focus on <strong>simplicity</strong> and development <strong>speed</strong></p>
         <p>Check our <a href="https://github.com/8iq/">github</p>
